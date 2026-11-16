@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Halo, Warga RT 26"
+                    android:textColor="#18181B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRoleBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role: Warga • RT 26 RW 08 Winongo"
+                    android:textColor="#52525B"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="#DC2626"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#18181B"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JADWAL PENGUMPULAN BERIKUTNYA"
+                android:textColor="#A1A1AA"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJadwalTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Minggu, 22 November 2026"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJadwalJamLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Pukul 08.00 WIB • Gudang Sementara Rumah Pak RT 26"
+                android:textColor="#E4E4E7"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvStatusAlur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#27272A"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Status: Menunggu Pengumpulan di Gudang RT"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAdminPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PANEL PENGURUS RT / ADMIN"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tetapkan jadwal pengumpulan baru &amp; kirim notifikasi pengingat H-1 ke smartphone warga."
+                android:textColor="#52525B"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etInputTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Hari &amp; Tanggal (Misal: Minggu, 29 Nov 2026)"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etInputJam"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Jam Pengumpulan (Misal: 08.00 - 10.00 WIB)"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnSimpanJadwal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#18181B"
+                android:text="Simpan Jadwal &amp; Kirim Notifikasi H-1"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnUpdateStatusPengepul"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#3F3F46"
+                android:text="Tandai: Sudah Dipilah &amp; Dijual ke Pengepul"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTestNotifWarga"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#27272A"
+            android:text="🔔 Simulasikan Notifikasi Pengingat H-1"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PANDUAN PEMILAHAN SAMPAH ANORGANIK"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Pisahkan sampah anorganik dari sampah dapur/organik agar tetap bersih &amp; bernilai ekonomis:"
+                android:textColor="#52525B"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="1. Kategori Plastik &amp; Botol (PET/HDPE)"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Botol air mineral, gelas plastik, botol sampo, jerigen kecil.\n• Syarat: Kosongkan isi cairan, lepas label bila perlu, dan remukkan agar hemat tempat."
+                android:textColor="#3F3F46"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2. Kategori Kardus &amp; Kertas Kering"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Kardus paket, karton minuman kering, koran, buku bekas.\n• Syarat: Pastikan kondisi kering, tidak terkena minyak atau sisa makanan."
+                android:textColor="#3F3F46"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3. Kategori Logam &amp; Kaleng"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Kaleng minuman aluminium, kaleng susu/makanan.\n• Syarat: Bilas bersih dari sisa makanan agar tidak berbau di Gudang Pak RT."
+                android:textColor="#3F3F46"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALUR PENYETORAN RT 26 RW 08 WINONGO"
+                android:textColor="#18181B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="1. Warga menerima notifikasi H-1 jadwal pengumpulan.\n2. Warga membawa sampah anorganik terpilah ke Gudang Sementara di Rumah Pak RT 26.\n3. Pengurus melakukan pengecekan &amp; pemilahan akhir.\n4. Sampah disetorkan/dijual ke pengepul untuk kas/tabungan warga."
+                android:textColor="#3F3F46"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
