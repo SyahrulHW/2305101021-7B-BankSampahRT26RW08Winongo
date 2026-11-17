@@ -6,7 +6,7 @@
 - NIM: 2305101021
 - Kelas: 7B
 - Program Studi: Teknik Informatika (Universitas PGRI Madiun)
-- Mata Kuliah: Pemrograman Bergerak
+- Mata Kuliah: Pemrograman Mobile
 - Tahun Akademik: 2026
 
 ## Deskripsi
