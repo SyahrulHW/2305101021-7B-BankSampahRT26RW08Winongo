@@ -53,4 +53,8 @@ Aplikasi mobile **Bank Sampah RT 26 RW 08 Kelurahan Winongo** dikembangkan sebag
 
 1. **Clone Repository**:
    ```bash
-   git clone [https://github.com/SyahrulHW/2305101021-7B-BankSampahRT26RW08Winongo.git](https://github.com/SyahrulHW/2305101021-7B-BankSampahRT26RW08Winongo.git)
+   git clone [https://github.com/SyahrulHW/2305101021-7B-BankSampahRT26RW08Winongo.git](https://github.com/SyahrulHW/2305101021-7B-BankSampahRT26RW08Winongo.git) 
+2. Buka Android Studio, pilih File > Open, lalu pilih folder project di dalam `2305101021-7B-BankSampahRT26RW08Winongo/`.
+3. Tunggu proses Gradle sync selesai (klik Sync Now jika diminta).
+4. Pilih perangkat di bagian atas: emulator (Device Manager) atau HP dengan USB Debugging aktif.
+5. Klik tombol Run (segitiga hijau).
