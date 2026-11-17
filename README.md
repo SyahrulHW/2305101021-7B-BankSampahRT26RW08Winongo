@@ -2,12 +2,12 @@
 
 ## Identitas Mahasiswa
 
-- Nama: Syahrul
+- Nama: Syahrul Haris Wijaya
 - NIM: 2305101021
 - Kelas: 7B
 - Program Studi: Teknik Informatika (Universitas PGRI Madiun)
-- Mata Kuliah: Pemrograman Mobile
-- Tahun Akademik: 2026/2027
+- Mata Kuliah: Pemrograman Bergerak
+- Tahun Akademik: 2026
 
 ## Deskripsi
 
@@ -36,8 +36,8 @@ Aplikasi mobile **Bank Sampah RT 26 RW 08 Kelurahan Winongo** dikembangkan sebag
 
 ## Struktur Folder
 
-- `uts/`: Source code dan file pendukung UTS (berisi proyek Android Studio beserta modul `app/`, `LoginActivity.kt`, `MainActivity.kt`, layout XML, serta konfigurasi Gradle).
-- `uts/screenshots/`: Bukti visual hasil implementasi aplikasi (tampilan halaman login, dashboard warga, dashboard admin, notifikasi, dan panduan pemilahan sampah).
+- `2305101021-7B-BankSampahRT26RW08Winongo/`: Source code dan file pendukung UTS (berisi proyek Android Studio beserta modul `app/`, `LoginActivity.kt`, `MainActivity.kt`, layout XML, serta konfigurasi Gradle).
+- `screenshots/`: Bukti visual hasil implementasi aplikasi (tampilan halaman login, dashboard warga, dashboard admin, notifikasi, dan panduan pemilahan sampah).
 
 ## Persyaratan Menjalankan Aplikasi
 
